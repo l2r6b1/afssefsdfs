@@ -30,7 +30,7 @@ document.body.innerHTML += `
   <div class="text"><img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div>
   <div class="menu transition hidden" tabindex="-1">
   <div data-value="0" class="item active selected">
-        <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/0.svg">Default</div><div data-value="1" class="item">
+        <img class="ui avatar image" src="https://cdn.discordapp.com/avatars/730807393646280824/bff24b2da3326c98f1f45bc9b1bb3977.webp?size=100">Default</div><div data-value="1" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/1.svg">Man 1</div><div data-value="2" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/2.svg">Man 2</div><div data-value="3" class="item">
         <img class="ui avatar image" src="https://gartic.io/static/images/avatar/svg/3.svg">Man 3</div><div data-value="4" class="item">
@@ -1360,7 +1360,7 @@ btn.addEventListener("click", async function () {
           socket.players = data[5]; // players'i soket nesnesine kaydet
           socket.isRoom = true;
           socket.send(`42[46,${playerId}]`);
-          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}","Bot developer: github.com/anonimbiri"]`); }
+          if (params.get('private-mode') !== "true") { socket.send(`42[11,"${playerId}","الساطوري"]`); }
           updateUserList(data[5]);
           iziToast.info({
             position: 'topRight',
@@ -1635,7 +1635,7 @@ btn2.addEventListener("click", function () {
     warningMessage = false;
     socketList.forEach(function (socket) {
       if (socket.readyState === WebSocket.OPEN) {
-        if (params.get('private-mode') === "true") { socket.send(`42[11,"${socket.playerId}","Bot developer: github.com/anonimbiri"]`); }
+        if (params.get('private-mode') === "true") { socket.send(`42[11,"${socket.playerId}","ايريك لعيون البيريك"]`); }
         socket.close();
         socket.onerror = null;
         socket.onclose = null;
